@@ -4,7 +4,7 @@ let game;
 let froggo;
 let log;
 // Crawler Constructor function
-function Crawler(x, y, width, height, color) {
+function Log(x, y, width, height, color) {
   this.x = x;
   this.y = y;
   this.width = width;
@@ -18,13 +18,13 @@ function Crawler(x, y, width, height, color) {
 }
 
 function moveLogLeft () {
-  log.x -= 1;
+  log.x -= .25;
 }
 
 // 
 
 const detectHit = () => {
-    // check for collision on x axis
+    // check for collision
     if (froggo.x + froggo.width > log.x &&
         froggo.x < log.x + log.width &&
         froggo.y + froggo.height > log.y &&
@@ -41,12 +41,13 @@ const gameLoop = () => {
   if (log.alive) {
     // render the ogre
     log.render()
+    // move log
     setInterval(moveLogLeft, 500);
     // check for collision
     detectHit();
     // TODO detectHit()
   }
-  // render the hero
+  // render the frog
   froggo.render()
 }
 const frogMovementHandler = e => {
@@ -91,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
   game.setAttribute('width', 480);
   ctx = game.getContext('2d');
   // CHARACTER REFS
-  log = new Crawler(480, 300, 80, 20, 'tan');
-  froggo = new Crawler(220, 600, 40, 40, 'blueViolet');
+  log = new Log(480, 560, 80, 40, 'tan');
+  froggo = new Log(220, 600, 40, 40, 'blueViolet');
   document.addEventListener('keydown', frogMovementHandler);
-  let runGame = setInterval(gameLoop, 500);
+  let runGame = setInterval(gameLoop, 60);
 })
