@@ -28,11 +28,39 @@ class Log {
 function goLogs() {
     for (let i = 0; i < 3; i++) {
         let x = i * 250;
-        logsArray.push(new Log(x, canvas.height - grid*2 - 20, grid*1.5, grid, .75, "smallLog"))
+        logsArray.push(new Log(x, canvas.height - grid*2 - 20, grid*1.5, grid, .65, "smallLogs"))
     }
     for (let i = 0; i < 2; i++) {
         let x = i * 550;
-        logsArray.push(new Log(x, canvas.height - grid*3 -20, grid*2.5, grid, -1, "bigLog"))
+        logsArray.push(new Log(x, canvas.height - grid*3 - 20, grid*2.5, grid, -1, "bigLogs"))
+    }
+    for (let i = 0; i < 3; i++) {
+        let x = i * 180;
+        logsArray.push(new Log(x + 80, canvas.height - grid*4 - 20, grid, grid, 0, "lilyPads"))
+    }
+    for (let i = 0; i < 2; i++) {
+        let x = i * 450;
+        logsArray.push(new Log(x, canvas.height - grid*5 - 20, grid*2.5, grid, -2, "bigLogs"))
+    }
+    for (let i = 0; i < 3; i++) {
+        let x = i * 200;
+        logsArray.push(new Log(x, canvas.height - grid*6 - 20, grid*1.5, grid, .5, "smallLogs"))
+    }
+    for (let i = 0; i < 2; i++) {
+        let x = i * 250;
+        logsArray.push(new Log(x, canvas.height - grid*7 - 20, grid*1.5, grid, 1.15, "smallLogs"))
+    }
+    for (let i = 0; i < 2; i++) {
+        let x = i * 320;
+        logsArray.push(new Log(x + 100, canvas.height - grid*8 - 20, grid, grid, 0, "lilyPads"))
+    }
+    for (let i = 0; i < 2; i++) {
+        let x = i * 350;
+        logsArray.push(new Log(x, canvas.height - grid*9 - 20, grid, grid, -3, "tinyLogs"))
+    }
+    for (let i = 0; i < 3; i++) {
+        let x = i * 260;
+        logsArray.push(new Log(x, canvas.height - grid*10 - 20, grid*1.5, grid, .5, "smallLogs"))
     }
 };
 goLogs();

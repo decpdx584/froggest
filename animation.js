@@ -22,7 +22,7 @@ window.addEventListener("keyup", function(e) {
 
 function scored() {
     score ++;
-    gameSpeed += 0.1;
+    gameSpeed += 0.25;
     froggo.x = canvas.width/2 - froggo.width/2;
     froggo.y = canvas.height - froggo.height - 40;
 };
