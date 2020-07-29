@@ -1,8 +1,8 @@
 function move() {
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
+    maintainLogs();
     froggo.draw();
     froggo.update();
-    maintainLogs();
     markScore();
     requestAnimationFrame(move);
 }
