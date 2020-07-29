@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://i.imgur.com/isxkHVV.jpg");
+    background-size: cover;
+}
+
 .shebang {
     border: 5px solid brown;
     top: 50%;

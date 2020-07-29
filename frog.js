@@ -37,7 +37,7 @@ class Froggo {
         }
     }
     draw() {
-        ctx2.fillStyle = "red";
+        ctx2.fillStyle = "blueviolet";
         ctx2.fillRect(this.x, this.y, this.width, this.height);
     }
     jump() {
