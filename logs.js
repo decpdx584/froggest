@@ -9,7 +9,7 @@ class Log {
     }
     draw() {
         ctx1.fillStyle = "brown";
-        ctx1.fillRect(this.x, this.y + 15, this.width, this.height*.5);
+        ctx1.fillRect(this.x, this.y + 15, this.width, this.height/2);
     }
     update() {
         this.x += this.speed * gameSpeed;

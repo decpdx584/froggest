@@ -3,6 +3,7 @@ function move() {
     froggo.draw();
     froggo.update();
     maintainLogs();
+    markScore();
     requestAnimationFrame(move);
 }
 move();
@@ -25,4 +26,13 @@ function scored() {
     gameSpeed += 0.25;
     froggo.x = canvas.width/2 - froggo.width/2;
     froggo.y = canvas.height - froggo.height - 40;
+};
+
+function markScore () {
+    ctx3.fillStyle = "chartreuse";
+    ctx3.fillRect(248, 5, grid*1.25, grid/2);
+    ctx3.fillStyle = "black";
+    ctx3.strokeStyle = "black";
+    ctx3.font = "20px solid Times New Roman";
+    ctx3.strokeText("Score: " + score, 265, 30);
 };
