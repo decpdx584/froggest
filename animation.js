@@ -17,4 +17,11 @@ window.addEventListener("keydown", function(e) {
 window.addEventListener("keyup", function(e) {
     delete keys[e.keyCode];
     froggo.moving = false;
-})
+});
+
+function scored() {
+    score ++;
+    gameSpeed += 0.1;
+    froggo.x = canvas.width/2 - froggo.width/2;
+    froggo.y = canvas.height - froggo.height - 40;
+}

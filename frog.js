@@ -35,6 +35,7 @@ class Froggo {
                 this.moving = true;
             }
         }
+        if (this.y < 0) scored();
     }
     draw() {
         ctx2.fillStyle = "blueviolet";
