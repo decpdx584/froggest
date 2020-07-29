@@ -2,6 +2,7 @@ function move() {
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
     froggo.draw();
     froggo.update();
+    maintainLogs();
     requestAnimationFrame(move);
 }
 move();
@@ -24,4 +25,4 @@ function scored() {
     gameSpeed += 0.1;
     froggo.x = canvas.width/2 - froggo.width/2;
     froggo.y = canvas.height - froggo.height - 40;
-}
+};
