@@ -36,3 +36,10 @@ function markScore () {
     ctx3.font = "20px solid Times New Roman";
     ctx3.strokeText("Score: " + score, 265, 30);
 };
+
+function reset() {
+    froggo.x = canvas.width/2 - froggo.width/2;
+    froggo.y = canvas.height - froggo.height - 40;
+    score = 0;
+    gameSpeed = 1;
+}
