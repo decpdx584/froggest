@@ -1,5 +1,5 @@
 .shebang {
-    border: 10px solid brown;
+    border: 5px solid brown;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -10,7 +10,6 @@
 
 canvas {
     position: absolute;
-    background: blue;
     top: 0;
     left: 0;
     width: 100%;
