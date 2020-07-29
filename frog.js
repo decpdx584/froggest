@@ -18,19 +18,19 @@ class Froggo {
             }
         }
         if (keys[83] || keys[40]) {
-            if (this.moving === false) {
+            if (this.moving === false && this.y < canvas.height - this.height*2) {
                 this.y += grid;
                 this.moving = true;
             }
         }
         if (keys[37] || keys[65]) {
-            if (this.moving === false) {
+            if (this.moving === false && this.x > this.width) {
                 this.x -= grid;
                 this.moving = true;
             }
         }
         if (keys[39] || keys[68]) {
-            if (this.moving === false) {
+            if (this.moving === false && this.x < canvas.width - this.width*2) {
                 this.x += grid;
                 this.moving = true;
             }
