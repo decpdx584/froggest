@@ -15,7 +15,7 @@ class Log {
         this.x += this.speed * gameSpeed;
         if (this.speed > 0) {
             if (this.x > canvas.width + this.width) {
-            this.x = 0 - this.width;
+                this.x = 0 - this.width;
             }
         } else {
             if (this.x < 0 - this.width*1.5) {
@@ -66,14 +66,16 @@ function goLogs() {
 goLogs();
 
 function checkAlive() {
-    if (froggo.y < 250 && froggo.y > canvas.height - grid) {
+    console.log("alive!");
+    if (froggo.y < 250 || froggo.y > canvas.height - grid - 20) {
         froggo.alive = true;
     } else {
-        for (let i = 0; i < logsArray.length[i]; i++) {
+        for (let i = 0; i < logsArray.length; i++) {
             if (collision(froggo, logsArray[i])) {
                 console.log("hit!");
-                froggo.x += logsArray[i].speed;
-                froggo.alive = true;
+                froggo.onALog = true;
+                froggo.speed = logsArray[i].speed;
+                console.log(froggo.speed);
             }
         }
         if (froggo.alive === false) {
@@ -81,6 +83,12 @@ function checkAlive() {
         }
     }
 };
+
+// function frogOnALog() {
+//     if (froggo.onALog) {
+//          = 
+//     }
+// }
 
 function maintainLogs() {
     for (let i = 0; i < logsArray.length; i++) {

@@ -37,11 +37,11 @@ function markScore () {
     ctx3.strokeText("Score: " + score, 265, 30);
 };
 
-function collision(obj1, obj2) {
-    return (obj1.x > obj2.x + obj2.width ||
-            obj1.x + obj1.width < obj2.x ||
-            obj1.y > obj2.y + obj2.height ||
-            obj1.y + obj1.height < obj2.y)
+function collision(froggo, log) {
+    return !(froggo.x > log.x + log.width || // if frog is to the right of the log
+            froggo.x + froggo.width < log.x || // if frog is to the left of the log
+            froggo.y > log.y + log.height || // if frog is under the log
+            froggo.y + froggo.height < log.y) // if frog is over the log
 };
 
 function reset() {
