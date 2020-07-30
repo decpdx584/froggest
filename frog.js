@@ -57,6 +57,7 @@ class Froggo {
     }
     jump() {
         console.log("jump");
+        froggo.update();
         checkAlive();
     }
 };
