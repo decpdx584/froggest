@@ -19,5 +19,6 @@ let score = 0;
 let collisionCount = 0;
 let frame = 0;
 let gameSpeed = 1;
+let safe = false;
 
 const logsArray = [];

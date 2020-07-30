@@ -70,4 +70,20 @@ function maintainLogs() {
         logsArray[i].update();
         logsArray[i].draw();
     }
+    for (let i = 0; i < logsArray.length; i++) {
+        let eachLog = logsArray[i]
+        console.log(collision(froggo, eachLog));
+    }
+    if (froggo.y < 250 && froggo.y > canvas.height - grid) {
+        safe = true;
+        for (let i = 0; i < logsArray.length[i]; i++) {
+            if (collision(froggo, logs.array[i])) {
+                frogger.x += logsArray[i].speed;
+                safe = true;
+            }
+        }
+        if (safe === false) {
+            reset();
+        }
+    }
 };
