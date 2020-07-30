@@ -65,25 +65,31 @@ function goLogs() {
 };
 goLogs();
 
+function checkAlive() {
+    if (froggo.y < 250 && froggo.y > canvas.height - grid) {
+        froggo.alive = true;
+    } else {
+        for (let i = 0; i < logsArray.length[i]; i++) {
+            if (collision(froggo, logsArray[i])) {
+                console.log("hit!");
+                froggo.x += logsArray[i].speed;
+                froggo.alive = true;
+            }
+        }
+        if (froggo.alive === false) {
+            reset();
+        }
+    }
+};
+
 function maintainLogs() {
     for (let i = 0; i < logsArray.length; i++) {
         logsArray[i].update();
         logsArray[i].draw();
-    }
-    for (let i = 0; i < logsArray.length; i++) {
-        let eachLog = logsArray[i]
-        console.log(collision(froggo, eachLog));
-    }
-    if (froggo.y < 250 && froggo.y > canvas.height - grid) {
-        safe = true;
-        for (let i = 0; i < logsArray.length[i]; i++) {
-            if (collision(froggo, logs.array[i])) {
-                frogger.x += logsArray[i].speed;
-                safe = true;
-            }
-        }
-        if (safe === false) {
-            reset();
-        }
+    // }
+    // for (let i = 0; i < logsArray.length; i++) {
+    //     let eachLog = logsArray[i]
+    //     // console.log(collision(froggo, eachLog));
+    // 
     }
 };
