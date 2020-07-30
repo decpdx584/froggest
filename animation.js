@@ -3,6 +3,7 @@ function move() {
     maintainLogs();
     froggo.update();
     froggo.draw();
+    checkAlive();
     markScore();
     requestAnimationFrame(move);
 }

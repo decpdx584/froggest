@@ -69,18 +69,15 @@ function goLogs() {
 goLogs();
 
 function checkAlive() {
-    console.log("alive!");
-    if (froggo.y < grid || froggo.y > canvas.height - grid - 20) {
-        froggo.alive = true;
-        froggo.speed = 0;
-        console.log("test")
-    } else if (froggo.x < 0 || froggo.x > canvas.width) {
+    if (froggo.x < 0 || froggo.x > canvas.width) {
         froggo.alive = false;
         reset();
+    } else if (froggo.y < grid || froggo.y > canvas.height - grid - 20) {
+        froggo.alive = true;
+        froggo.speed = 0;
     } else {
         for (let i = 0; i < logsArray.length; i++) {
             if (collision(froggo, logsArray[i])) {
-                console.log("hit!");
                 froggo.onALog = true;
                 froggo.speed = logsArray[i].speed;
                 console.log(logsArray[i].speed);
