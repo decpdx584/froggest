@@ -11,7 +11,7 @@ body {
     width: 600px;
     height: 900px;
     transform: translate(-50%, -50%);
-
+    background-color: aqua;
 }
 
 canvas {

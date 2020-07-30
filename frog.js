@@ -52,8 +52,7 @@ class Froggo {
         
     }
     draw() {
-        ctx2.fillStyle = "blueviolet";
-        ctx2.fillRect(this.x, this.y, this.width, this.height);
+        ctx2.drawImage(froggoPic, froggo.x, froggo.y, this.width, this.height);
     }
     jump() {
         console.log("jump");

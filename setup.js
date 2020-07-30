@@ -22,3 +22,13 @@ let gameSpeed = 1;
 let safe = false;
 
 const logsArray = [];
+
+const froggoPic = new Image();
+froggoPic.src = "https://i.imgur.com/mUeiVAD.png";
+
+const logPic = new Image();
+logPic.src = "https://i.imgur.com/2dze9K5.png";
+
+const lilyPic = new Image();
+lilyPic.src = "https://i.imgur.com/TamLfDjs.png";
+
