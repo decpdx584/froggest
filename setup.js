@@ -34,3 +34,6 @@ lilyPic.src = "https://i.imgur.com/TamLfDjs.png";
 
 const forestPic = new Image();
 forestPic.src = "https://i.imgur.com/BdxGaHz.jpg?2";
+
+const cityPic = new Image();
+cityPic.src = "https://i.imgur.com/nLYof5n.png?1";
