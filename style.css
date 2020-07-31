@@ -16,6 +16,11 @@ body {
     font-size: 30px;
 }
 
+.modal-header {
+    color: rgb(184, 21, 176);
+    font-size: 30px;
+}
+
 button {
     background-color: blueviolet;
     border: 2px;
