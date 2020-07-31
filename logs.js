@@ -80,8 +80,6 @@ function checkAlive() {
             if (collision(froggo, logsArray[i])) {
                 froggo.onALog = true;
                 froggo.speed = logsArray[i].speed;
-                console.log(logsArray[i].speed);
-                console.log(froggo.speed);
                 return;
             }
         }
