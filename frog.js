@@ -22,7 +22,7 @@ class Froggo {
                 this.x = canvas.width + this.width;
             }
         }
-         if (keys[38] || keys[87]) {
+        if (keys[38] || keys[87]) {
             if (this.moving === false) {
                 this.y -= grid;
                 this.moving = true;
@@ -47,7 +47,7 @@ class Froggo {
             }
         }
         if (this.y < 0) scored();
-        
+
     }
     draw() {
         ctx2.drawImage(froggoPic, froggo.x, froggo.y, this.width, this.height);

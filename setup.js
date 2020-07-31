@@ -13,11 +13,18 @@ const ctx3 = canvas.getContext("2d");
 canvas3.width = 600;
 canvas3.height = 900;
 
+const openModal = document.quesrySelector(".openMod");
+const playButt = document.getElementById("playButt");
+const shebang = document.querySelector(".shebang");
+
+playButt.onclick = function () {
+    openModal.style.display = "none";
+    shebang.style.display = "block";
+}
+
 const grid = 80;
 let keys = [];
 let score = 0;
-let collisionCount = 0;
-let frame = 0;
 let gameSpeed = 1;
 let safe = false;
 

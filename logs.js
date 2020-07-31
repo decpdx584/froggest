@@ -88,20 +88,9 @@ function checkAlive() {
     }
 };
 
-// function frogOnALog() {
-//     if (froggo.onALog) {
-//          = 
-//     }
-// }
-
 function maintainLogs() {
     for (let i = 0; i < logsArray.length; i++) {
         logsArray[i].update();
         logsArray[i].draw();
-        // }
-        // for (let i = 0; i < logsArray.length; i++) {
-        //     let eachLog = logsArray[i]
-        //     // console.log(collision(froggo, eachLog));
-        // 
     }
 };
