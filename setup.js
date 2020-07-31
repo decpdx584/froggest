@@ -36,11 +36,11 @@ forestPic.src = "https://i.imgur.com/BdxGaHz.jpg?2";
 const cityPic = new Image();
 cityPic.src = "https://i.imgur.com/nLYof5n.png?1";
 
-// const openModal = document.quesrySelector(".openMod");
-// const playButt = document.getElementById("playButt");
-// const shebang = document.querySelector(".shebang");
+const openModal = document.querySelector(".openMod");
+const playButt = document.getElementById("playButt");
+const shebang = document.querySelector(".shebang");
 
-// playButt.onclick = function () {
-//     openModal.style.display = "none";
-//     shebang.style.display = "block";
-// }
+playButt.onclick = function () {
+    openModal.style.display = "none";
+    shebang.style.display = "block";
+}

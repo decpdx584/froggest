@@ -145,9 +145,14 @@ Since I've been slower on the uptake with a lot of this stuff I've struggled wit
 - I wanted to incorprate sprite animation for my frog.
 - I wanted to add sound effects
 - I wanted to have a bug randomly appear on logs throughout and attach some kind of bonus (time or points) to catching them
-- I wanted to have a modal onload to explain the story and controls
-This last one is the one I was working on just before I decided to throw in the towel for the evening. I still have commented-out code referencing it, hoping I might be able to pull a rabbit out of the hat tomorrow morning before I have to present. But, for my own sanity, I need to call it a night.
+- ~~I wanted to have a modal onload to explain the story and controls
+This last one is the one I was working on just before I decided to throw in the towel for the evening. I still have commented-out code referencing it, hoping I might be able to pull a rabbit out of the hat tomorrow morning before I have to present. But, for my own sanity, I need to call it a night.~~
 
 ## Conclusion
 Overall, I'm pretty proud of this game I built, especially considering I had NO IDEA how to do ANY of this a couple weeks ago. I'll say, though: I thought making a game might have been a bit more fun than it was work, but alas...😅
 I plan to acheieve each one of these aforementioned stretch goals in the coming days or weeks (or months? let's see how this course goes). I'm a man of integrity, so I'll make an addendum here describing what I've added and when so as not to give the wrong impression later on.
+
+
+
+## Postscript
+So, I was able to get my modal working with my TA's assistance (fresh eyes)! Turns out when I declared my variable to grab my modal I said "quesrySelector"...🤦‍♂️ Anyway, I can now cross that off my list AND BEFORE I HAVE TO PRESENT, NO LESS!!
