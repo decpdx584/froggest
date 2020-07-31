@@ -8,8 +8,6 @@ class Froggo {
         this.alive = true;
         this.onALog = false;
         this.speed = 0;
-        this.frameX = 0;
-        this.frameY = 0;
     }
     update() {
         this.x += this.speed * gameSpeed;

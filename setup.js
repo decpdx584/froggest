@@ -13,15 +13,6 @@ const ctx3 = canvas.getContext("2d");
 canvas3.width = 600;
 canvas3.height = 900;
 
-// const openModal = document.quesrySelector(".openMod");
-// const playButt = document.getElementById("playButt");
-// const shebang = document.querySelector(".shebang");
-
-// playButt.onclick = function () {
-//     openModal.style.display = "none";
-//     shebang.style.display = "block";
-// }
-
 const grid = 80;
 let keys = [];
 let score = 0;
@@ -44,3 +35,12 @@ forestPic.src = "https://i.imgur.com/BdxGaHz.jpg?2";
 
 const cityPic = new Image();
 cityPic.src = "https://i.imgur.com/nLYof5n.png?1";
+
+// const openModal = document.quesrySelector(".openMod");
+// const playButt = document.getElementById("playButt");
+// const shebang = document.querySelector(".shebang");
+
+// playButt.onclick = function () {
+//     openModal.style.display = "none";
+//     shebang.style.display = "block";
+// }
