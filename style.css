@@ -2,7 +2,7 @@ body {
     background-image: url("https://i.imgur.com/nPssgwW.jpg");
     background-size: cover;
 }
-
+/* 
 .openMod {
     position: fixed;
     z-index: 1;
@@ -10,11 +10,9 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(5, 54, 15, .6);
     color: goldenrod;
     text-align: center;
-    font: 
     font-size: 30px;
 }
 
@@ -28,7 +26,7 @@ button {
     display: inline-block;
     font-size: 20px;
     font-weight: 400;
-}
+} */
 
 .shebang {
     border: 5px solid brown;
@@ -40,7 +38,7 @@ button {
     transform: translate(-50%, -50%);
     background-image: url("https://i.imgur.com/GXqXwjkb.png?1");
     background-size: cover;
-    display: none;
+    /* display: none; */
 }
 
 canvas {

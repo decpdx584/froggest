@@ -13,14 +13,14 @@ const ctx3 = canvas.getContext("2d");
 canvas3.width = 600;
 canvas3.height = 900;
 
-const openModal = document.quesrySelector(".openMod");
-const playButt = document.getElementById("playButt");
-const shebang = document.querySelector(".shebang");
+// const openModal = document.quesrySelector(".openMod");
+// const playButt = document.getElementById("playButt");
+// const shebang = document.querySelector(".shebang");
 
-playButt.onclick = function () {
-    openModal.style.display = "none";
-    shebang.style.display = "block";
-}
+// playButt.onclick = function () {
+//     openModal.style.display = "none";
+//     shebang.style.display = "block";
+// }
 
 const grid = 80;
 let keys = [];
