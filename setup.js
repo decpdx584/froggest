@@ -31,3 +31,6 @@ logPic.src = "https://i.imgur.com/2dze9K5.png";
 
 const lilyPic = new Image();
 lilyPic.src = "https://i.imgur.com/TamLfDjs.png";
+
+const forestPic = new Image();
+forestPic.src = "https://i.imgur.com/BdxGaHz.jpg?2";

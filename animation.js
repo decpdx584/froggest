@@ -1,5 +1,6 @@
 function move() {
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
+    ctx1.drawImage(forestPic, 0, 0, canvas.width, grid);
     maintainLogs();
     froggo.update();
     froggo.draw();
