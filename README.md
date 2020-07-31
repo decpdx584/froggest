@@ -1,5 +1,5 @@
 # Froggest!
-This is my repo for my Frogger game, built with HTML, CSS, and JavaScript with canvas
+This is my repo for my Frogger game, built with HTML, CSS, and JavaScript with canvas. Here's the link: https://decpdx584.github.io/project-one/
 
 ## Outline
 Very basically, I've emulated a Frogger game. You're a frog from Portland, OR and you're just trying to get back to your beautiful pad in the woods. For some reason, though, you keep ending up back in Vancouver, WA😰. Every time you make it across the Columbia River to the other shore and up into the woods, you score a point but you're brought back to the start. It's like Groundhog Day but with a twist: the currents carrying the logs up and down stream get stronger every time you score. It gets ever harder to make it back again!
