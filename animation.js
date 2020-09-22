@@ -32,7 +32,7 @@ function scored() {
 };
 
 function markScore() {
-    ctx3.fillStyle = "chartreuse";
+    ctx3.fillStyle = "chartreuse"; //Sarah would flip her lid about this 🤮 lol
     ctx3.fillRect(248, 5, grid * 1.25, grid / 2);
     ctx3.fillStyle = "black";
     ctx3.strokeStyle = "black";
@@ -40,6 +40,9 @@ function markScore() {
     ctx3.strokeText("Score: " + score, 265, 30);
 };
 
+// if you wanted your edge case(where the frog looks like it is floating) to be less visible
+// you could edit this to make the logs "harder to land on"
+// this of course would only make it more difficult to win soooooo 🤷‍♂️
 function collision(froggo, log) {
     return !(froggo.x > log.x + log.width ||
         froggo.x + froggo.width < log.x ||

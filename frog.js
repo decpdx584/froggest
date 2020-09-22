@@ -10,6 +10,9 @@ class Froggo {
         this.speed = 0;
     }
     update() {
+        // I believe this can be a switch statement 
+        // would make it even cleaner
+        // nested if's can be ugly if you know what I mean
         this.x += this.speed * gameSpeed;
         if (this.speed > 0) {
             if (this.x > canvas.width + this.width) {
