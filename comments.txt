@@ -1,0 +1,20 @@
+Overall comments:
+(some of these might be obvious, but hey, that is what this is about!)
+    - Going thru and adding comments would be an easy way to show you know what you are doing
+    - That being said... Your code is very clean and easy to read 😃
+    - The game doesn't quite fit on my screen(vertically) a little bit of responsive css would clean up the user experience
+    - P.S. I forgot how fun frogger is 😅
+    - and this s*** gets QUICK! 😳
+    - A level counter would be a nice add, maybe some high score tracking (I did this in local storage in my project 1 if you want to just take that from my repo, feel free)
+    - Randomizing logs would be cool, so that each row is unique each "loop" (another stretch, not sure if it would be worth the time... But would still be cool!)
+
+
+Quick guide to in code comments:
+(line:file)These might be slightly if as I add things above... but it will get you close at least
+13:frog.js
+32:logs.js
+97:logs.js (ref to line 9 above)
+3:setup.js (ref to line 5 above)
+9:setup.js (ref to line 5 above)
+15:setup.js (ref to line 5 above)
+35:amimation.js

@@ -29,6 +29,11 @@ class Log {
 };
 
 function goLogs() {
+    // maybe a stretch, but these all look very similar
+    // would be awesome if you built another function that you called that built these. 
+    // the inputs to this function being the values that actually change below
+    // could even do some math in a recursive function to just run 1 command here
+    // like I said... maybe a stretch 😅
     for (let i = 0; i < 3; i++) {
         let x = i * 250;
         logsArray.push(new Log(x, canvas.height - grid * 2 - 20, grid * 1.5, grid, .65, "smallLogs"))
@@ -88,6 +93,9 @@ function checkAlive() {
     }
 };
 
+
+// not sure if I am fully grasping exactly what is happening here
+// but I think this is where you could randomize your log outputs?
 function maintainLogs() {
     for (let i = 0; i < logsArray.length; i++) {
         logsArray[i].update();
